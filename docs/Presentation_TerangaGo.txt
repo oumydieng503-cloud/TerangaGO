@@ -1,0 +1,104 @@
+================================================================================
+                         TERANGAGO
+        Plateforme de réservation de transport interurbain au Sénégal
+                    Document de présentation — Projet académique
+================================================================================
+
+Étudiante      : [Votre nom et prénom]
+Établissement  : ISI / Suptech
+Encadrant      : [Nom du professeur]
+Date           : Juin 2026
+Technologies   : Laravel 12 · PHP 8.2 · MySQL · Tailwind CSS
+
+
+================================================================================
+PAGE 1 — PRÉSENTATION GÉNÉRALE
+================================================================================
+
+1.1 CONTEXTE ET PROBLÉMATIQUE
+-----------------------------
+Au Sénégal, la réservation de places en car interurbain (Dakar–Thiès,
+Dakar–Saint-Louis, Dakar–Touba, etc.) repose encore largement sur des
+déplacements en gare routière, des appels téléphoniques ou des paiements
+en espèces.
+
+TerangaGo propose : recherche de trajets, réservation en ligne, paiement
+mobile (Wave / Orange Money) et billet électronique avec QR code.
+
+
+1.2 OBJECTIFS
+-------------
+  • Voyageurs : rechercher et réserver depuis le téléphone
+  • Opérateurs : gérer les trajets et valider les billets par scan QR
+  • Admin : superviser utilisateurs, lignes, bus et trajets
+  • Sécurité : rôles + authentification OTP pour les voyageurs
+
+
+1.3 LES TROIS ESPACES
+---------------------
+
+  VOYAGEUR     → Recherche, réservation, paiement, billet QR
+  OPÉRATEUR    → Gestion trajets, validation billets (ex. Dem Dikk)
+  ADMIN        → Supervision complète de la plateforme
+
+
+================================================================================
+PAGE 2 — FONCTIONNALITÉS
+================================================================================
+
+2.1 ESPACE VOYAGEUR
+-------------------
+  1. Recherche (Dakar → Thiès, date…)
+  2. Choix du nombre de places
+  3. Connexion OTP (téléphone 9 chiffres)
+  4. Paiement Wave ou Orange Money (FCFA)
+  5. Billet avec code + QR + PDF
+
+  Le voyageur voit si son billet est « En attente » ou « Validé ».
+
+
+2.2 ESPACE OPÉRATEUR
+--------------------
+  • Dashboard : bus, trajets, réservations, départs du jour
+  • Gestion des trajets
+  • Scan QR ou saisie manuelle du code billet
+
+
+2.3 ESPACE ADMINISTRATEUR
+-------------------------
+  • Utilisateurs, lignes, bus, trajets
+  • Vue globale de la plateforme
+
+
+2.4 FLUX
+--------
+  Recherche → Réservation → Paiement → Billet QR → Scan opérateur → Validé
+
+
+================================================================================
+PAGE 3 — DÉMO, TECHNIQUE, CONCLUSION
+================================================================================
+
+3.1 DÉMONSTRATION (comptes de test)
+-----------------------------------
+  1. Accueil : recherche Dakar → Thiès
+  2. OTP voyageur : téléphone 771234567
+  3. Paiement simulé Wave / Orange Money
+  4. Afficher le billet QR
+  5. Opérateur : operateur@demdikk.sn / password
+  6. Admin (optionnel) : admin@terangago.sn / password
+
+  Données démo : php artisan migrate:fresh --seed
+
+
+3.2 TECHNIQUE
+-------------
+  Laravel 12 · MySQL · Blade · Tailwind · QR code (génération + scan)
+
+
+3.3 CONCLUSION
+--------------
+  Application complète adaptée au Sénégal. Trois espaces couvrent tout
+  le parcours, de la réservation à l'embarquement.
+
+================================================================================

@@ -1,0 +1,283 @@
+================================================================================
+          TERANGAGO — PHRASES À DIRE PENDANT LA SOUTENANCE
+                    (Script oral page par page)
+================================================================================
+
+Conseil : parle calmement, montre l'écran en même temps que tu parles.
+Durée idéale : 8 à 12 minutes.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. INTRODUCTION (avant d'ouvrir l'application)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+« Bonjour ,
+
+Je vais vous présenter TerangaGo, une application web de réservation de
+transport interurbain au Sénégal.
+
+Le problème que nous avons identifié, c'est que beaucoup de voyageurs
+doivent encore se déplacer en gare pour acheter leur ticket, ou payer
+en espèces, sans savoir s'il reste des places.
+
+Notre solution permet de rechercher un trajet en ligne, réserver, payer
+avec Wave ou Orange Money, et recevoir un billet avec QR code scannable
+le jour du départ.
+
+L'application comporte trois espaces : voyageur, opérateur et
+administrateur. Je vais vous les montrer un par un. »
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2. PAGE D'ACCUEIL (recherche de trajet)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+« Voici la page d'accueil de TerangaGo.
+
+Ici, le voyageur peut rechercher un trajet en choisissant la ville de
+départ, la ville d'arrivée et la date. Par exemple, je vais chercher
+un trajet de Dakar vers Thiès.
+
+En dessous, on voit la liste des trajets disponibles avec l'heure, le
+numéro du bus, le prix en FCFA et le nombre de places restantes.
+
+Le design est pensé pour le mobile, parce qu'au Sénégal la plupart des
+réservations se font depuis le téléphone.
+
+Je clique sur "Réserver" pour continuer. »
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3. ESPACE VOYAGEUR — Choix des places
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+« Sur cette page, le voyageur choisit le nombre de places qu'il souhaite
+réserver.
+
+On voit le récapitulatif du trajet : la ligne, la date, l'heure et le
+prix par place.
+
+En haut, il y a un stepper qui montre où en est le voyageur dans le
+parcours : recherche, places, connexion, paiement et billet.
+
+Je choisis une place et je clique sur "Continuer". »
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4. ESPACE VOYAGEUR — Connexion OTP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+« Pour réserver, le voyageur n'a pas besoin de créer un compte avec mot
+de passe. Il s'identifie avec son nom et son numéro de téléphone.
+
+Un code OTP lui est envoyé par SMS. En mode démo, le code s'affiche
+directement à l'écran pour faciliter les tests.
+
+C'est adapté au contexte sénégalais, où beaucoup de personnes n'ont pas
+d'adresse email mais ont un numéro de téléphone.
+
+Je saisis le code reçu pour me connecter. »
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. ESPACE VOYAGEUR — Paiement
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+« Ici, le voyageur voit le récapitulatif complet de sa réservation :
+le trajet, le nombre de places et le montant total en FCFA.
+
+Il peut choisir son mode de paiement : Wave ou Orange Money, les deux
+solutions les plus utilisées au Sénégal.
+
+Pour cette démonstration, le paiement est simulé, mais en production
+on pourrait connecter les vraies API de paiement.
+
+Je confirme le paiement. »
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+6. ESPACE VOYAGEUR — Billet électronique (QR code)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+« Après le paiement, le système génère automatiquement un billet
+électronique.
+
+On voit ici une carte d'embarquement avec :
+  - la ville de départ et d'arrivée,
+  - la date et l'heure,
+  - le numéro du bus,
+  - un code unique,
+  - et surtout un QR code.
+
+Ce QR code est généré côté serveur avec une bibliothèque PHP. Le
+voyageur peut aussi télécharger ou imprimer son billet en PDF.
+
+Le statut est "En attente de validation" tant que l'opérateur ne l'a
+pas scanné le jour du départ. »
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+7. ESPACE VOYAGEUR — Dashboard "Mes billets"
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+« Dans l'espace personnel du voyageur, il retrouve toutes ses
+réservations passées et à venir.
+
+Pour chaque billet, il voit le mini QR code, le code du billet, et
+le statut : "En attente de validation" ou "Validé".
+
+Il y a aussi une navigation en bas de l'écran pour revenir facilement
+à la recherche ou à ses billets.
+
+Maintenant, je vais me connecter en tant qu'opérateur pour montrer la
+validation du billet. »
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+8. ESPACE OPÉRATEUR — Connexion + Dashboard
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+« L'opérateur, c'est par exemple une compagnie de transport comme
+Dem Dikk. Il se connecte avec un email et un mot de passe.
+
+Voici son tableau de bord. Il voit en un coup d'œil :
+  - le nombre de ses bus,
+  - ses trajets,
+  - les réservations,
+  - les places encore disponibles,
+  - et les départs prévus aujourd'hui.
+
+Chaque opérateur ne voit que SES propres données. C'est géré par un
+middleware de rôles dans Laravel. »
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+9. ESPACE OPÉRATEUR — Validation des billets (QR)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+« C'est la page la plus importante pour l'opérateur le jour du départ.
+
+Il peut scanner le QR code du voyageur avec la caméra de son téléphone
+ou de sa tablette. Le code est rempli automatiquement et le billet est
+validé.
+
+Il peut aussi saisir le code manuellement si la caméra ne fonctionne
+pas.
+
+En haut, on voit combien de billets sont encore à valider et combien
+sont déjà validés.
+
+Je vais valider le billet du voyageur qu'on vient de créer.
+
+[Après validation]
+
+Le billet passe au statut "Validé". Si on retourne côté voyageur, le
+statut a aussi changé dans "Mes billets". »
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+10. ESPACE OPÉRATEUR — Gestion des trajets (optionnel)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+« L'opérateur peut aussi gérer ses propres trajets : créer un nouveau
+départ, modifier l'heure ou le prix, ou supprimer un trajet.
+
+Chaque trajet est lié à un bus qui lui appartient. Il ne peut pas
+modifier les trajets d'un autre opérateur. »
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+11. ESPACE ADMIN — Dashboard
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+« Enfin, l'espace administrateur. C'est le gestionnaire global de la
+plateforme TerangaGo.
+
+Sur le dashboard, il voit les statistiques de toute l'application :
+  - le nombre de voyageurs,
+  - d'opérateurs,
+  - de lignes, de bus, de trajets,
+  - et le total des réservations.
+
+Depuis ici, il accède à la gestion complète de la plateforme. »
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+12. ESPACE ADMIN — Gestion des utilisateurs
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+« Sur cette page, l'administrateur peut créer, modifier ou supprimer
+des utilisateurs.
+
+Chaque utilisateur a un rôle : voyageur, opérateur ou admin. C'est ce
+rôle qui détermine à quel espace il a accès quand il se connecte.
+
+Par exemple, c'est ici qu'on a créé le compte opérateur Dem Dikk. »
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+13. ESPACE ADMIN — Lignes, Bus et Trajets
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+« L'administrateur gère aussi les lignes de transport, par exemple
+Dakar–Thiès ou Dakar–Saint-Louis.
+
+Ensuite, il crée les bus et les associe à un opérateur.
+
+Enfin, il planifie les trajets : la date, l'heure, le prix en FCFA et
+le nombre de places disponibles.
+
+Tout est relié en base de données : une ligne a plusieurs trajets, un
+bus appartient à un opérateur, une réservation génère un billet avec
+un code unique. »
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+14. PARTIE TECHNIQUE (si le prof pose la question)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+« Côté technique, l'application est développée avec Laravel 12 en
+PHP, avec une base de données MySQL.
+
+Le frontend utilise Blade et Tailwind CSS. L'architecture suit le
+pattern MVC : Modèle, Vue, Contrôleur.
+
+Pour la sécurité :
+  - les voyageurs passent par OTP,
+  - chaque rôle a un middleware qui filtre les accès,
+  - un voyageur ne peut voir que ses propres billets,
+  - un opérateur ne valide que les billets de ses trajets.
+
+Le QR code est généré côté serveur et contient le code unique du billet. »
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+15. CONCLUSION (phrase de fin)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+« Pour conclure, TerangaGo couvre tout le parcours : du voyageur qui
+réserve depuis son téléphone, à l'opérateur qui valide le billet le
+jour du départ, jusqu'à l'administrateur qui supervise la plateforme.
+
+L'application est adaptée au contexte sénégalais : villes locales,
+paiement mobile money, authentification par téléphone et billet QR.
+
+Les perspectives seraient d'intégrer les vraies API Wave et Orange
+Money, d'envoyer les SMS OTP en production, et de déployer l'application
+sur un serveur en ligne.
+
+Je vous remercie pour votre attention. Je suis disponible pour vos
+questions. »
+
+
+================================================================================
+                    COMPTES DE DÉMO (à avoir sous la main)
+================================================================================
+
+  Voyageur OTP  : téléphone 771234567 (code affiché à l'écran)
+  Opérateur     : operateur@demdikk.sn / password
+  Admin         : admin@terangago.sn / password
+
+  Commande avant la démo : php artisan migrate:fresh --seed
+
+================================================================================
